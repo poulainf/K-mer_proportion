@@ -1,4 +1,4 @@
-### GENOMIC K-MER analysis ###
+# GENOMIC K-MER analysis #
 K-mer_proportion is a PERL software suit wich anable K-mer representativity analyze in coding sequences data set. 
 
 ##  Synthetic coding genome
@@ -16,6 +16,23 @@ Synthetic coding genome fasta file is split to perform parallel analysis.
 ##  K-mer ratio determination
 
 Trikmer_analyser_0.5_global1000.pl
+
+We estimated K-mers representation in synthetic genome by calculating the ratio of observed vs. expected K-mers number of count as described by Werman et al. (29). A K-mer is defined as a collection of sequences with a commune motif. For instance the NTC K-mer encompasses ATC, CTC, GTC and TTC sequences. The number of observed K-mers is directly count from synthetic genome.  Expected number is estimated by the average of one thousand K-mers counting of randomly shuffled sequences. This null model based on one thousand iteration ensure a random K-mer occurrence representation of sequences with a same nucleotide composition. 
+
+The returned observed vs. expected K-mer ratio indicate the representation of the K-mer in the analyze sequence. A ratio value << 0 indicate a K-mer under representation and a value = 0 point a non-affected representation.  
+
+# GENIC K-MER analysis #
+K-mer_proportion is a PERL software suit wich anable K-mer representativity analyze in coding sequences data set. 
+
+##  Input sequence split to reduce counter analysis 
+
+cds_ncds_split.03.pl
+
+Synthetic coding genome fasta file is split to perform parallel analysis.
+
+##  K-mer ratio determination
+
+Trikmer_analyser_0.5_genic1000.pl
 
 We estimated K-mers representation in synthetic genome by calculating the ratio of observed vs. expected K-mers number of count as described by Werman et al. (29). A K-mer is defined as a collection of sequences with a commune motif. For instance the NTC K-mer encompasses ATC, CTC, GTC and TTC sequences. The number of observed K-mers is directly count from synthetic genome.  Expected number is estimated by the average of one thousand K-mers counting of randomly shuffled sequences. This null model based on one thousand iteration ensure a random K-mer occurrence representation of sequences with a same nucleotide composition. 
 
