@@ -37,7 +37,7 @@ my %seq_for= read_fasta( $seq_file );
 my %info_for = taxon_id( $info_file );
 
 ### Start printing 
-my $outfile1 = join "" , $outname,'_Kmer-counting100_global.tsv';
+my $outfile1 = join "" , $outname,'_Kmer-counting1000_global.tsv';
 open my $out, '>',  $outfile1;
 my @kmers = split / /, q(CCN NCC NNCCNN NCT NCG NCA NGG GGN NNGGNN NNTGNN NNAGNN NNCGNN TCN NTC NNTCNN NTT NTA NTG NGA GAN NNGANN NNTANN NNAANN NNCANN NGT NGC NAC NAT NAA NAG );
 say {$out} join  "\t", "#ID", @kmers, "Group", "Genus", "Family", "Specie";
