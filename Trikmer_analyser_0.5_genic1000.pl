@@ -17,7 +17,7 @@ This tool estimate the trikmer enrichment ratio of CCN NCC NNCCNN NCT NCG NCA NG
 For genic sequences. 
         1-The software format fasta sequences/
         2-The software collect for each ID the associated virus Specie, Family, Genus, Group, from file.gb
-        3-The software randomize sequence and count nucleotide motif (100 times)
+        3-The software randomize sequence and count nucleotide motif (1000 times)
         4-The software count observed nucleotide motif in original sequence
         6-The software calculate the enrichment ratio between obs/exp
         7-The software print the result with Virus informations
