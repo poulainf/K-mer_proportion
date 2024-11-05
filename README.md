@@ -9,7 +9,7 @@ In brief, we estimate K-mer representation in synthetic genomes by calculating t
 
 The resulting observed-to-expected K-mer ratio indicates the representation of each K-mer in the analyzed sequence. A ratio < 0 suggests underrepresentation of the K-mer, while a ratio around 0 indicates no significant deviation from expected representation. 
 
-The data repository contains FASTA files of coding sequences (CDS) for human viruses, along with their corresponding GenBank annotation files.
+The data repository contains FASTA files of coding sequences (CDS) for non-human primate viruses, along with their corresponding GenBank annotation files.
 
 ## GENOMIC K-MER analysis ##
 ###  Synthetic coding genome
